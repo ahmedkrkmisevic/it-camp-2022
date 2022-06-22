@@ -1,0 +1,50 @@
+div img {
+height: 300px;
+width: 500px;
+border: top right radius 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+
+
+}
+div{
+    background-color: yellow;
+}
+div h1{
+    color: red;
+}
+div h2{
+    color: blue;
+}
+div p{
+    color: black;
+}
+.class1 {
+    background-color: yellow;
+    width: 500px;
+    height: 800spx;
+    border: 5px solid;
+    border-radius: 15px;
+    margin: 20px;
+    
+    
+
+
+}
+h1 {
+    text-align: center;
+}
+p{
+    text-align: unset;
+    font-size: 20px;
+}
+p:hover{
+    background-color: rgb(207, 220, 20);
+}
+h2:hover{
+    background-color: blueviolets;
+}
+
+
+
+
