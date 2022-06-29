@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.main{
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    font-size: 20px;
+}
+.child{
+    font-size:80%;
+}

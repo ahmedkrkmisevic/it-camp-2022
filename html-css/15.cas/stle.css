@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    float: left;
+    margin: right 15px; 
+}
+p{
+    text-align: right;
+    margin-right: 15px;
+}
+.prvi{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(127, 255, 212,0,7 );
+}
+.drugi{
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.glavni{
+    margin: 15px;
+    background-color:red;
+    padding:20px 15px 20 px 15px;
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    border: 2px dashed;
+    overflow: auto;
+
+
+}
+.p{
+    font-size: large;
+    color: brown;
+}
+.glavni :hover{
+    background-color: aquamarine;
+}
+.fuga{
+    color: black;
+}
+.main{
+    margin: 20px auto;
+    color:red;
+    width: 700px;
+    height: 650px;
+    background-image: url(./slikaaaa.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+

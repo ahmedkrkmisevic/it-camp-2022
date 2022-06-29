@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.glavni{
+    display: inline-block;
+    background-color: aquamarine;
+    margin: 40px 20px auto;
+    width: 350px;
+    height: 400px;
+    overflow: auto;}
+
+/* .glavni:nth-of-type(2){
+    background-color: aquamarine;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    } */
+    /* ako u display svojstvu stavimo block to nma onemogocuje dodatne stillove tog kontejnera sto nam ide u korist pozeljno j ekoristiti inline-block kako nam ostaje gucnost dodatne manipulacije tog kontejnera  */ 
+    /* html elements */
+    /* postoje */
+    /* 1.block level elements */
+    /* neki poznati block level elements */
+    /* <p> <div> <h1> do <h6> <ol> <ul> >li> <main> <section> <article> */
+
+    /* 2.inline elemnts */
+    /* neki poznati  */
+    /* <span> <a> <img> <button> */

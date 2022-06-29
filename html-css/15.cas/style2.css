@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent{
+    width: auto;
+    height: 400px;
+    background-color: rgb(28, 125, 209);
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(83, 42, 165);
+    float: left;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(42, 165, 48);
+    float: left;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(165, 81, 42);
+    float: left;
+    clear: both;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(165, 42, 42);
+    float: left;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(165, 42, 42);
+    float: left;
+    clear: both;
+}
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(112, 165, 42);
+    float: left;
+}
+.box7{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(165, 42, 149);
+    float: left;
+}
+.prvi{
+    width: 300px;
+    height: 300px;
+    background-color: chartreuse;
+    float: left;
+}
+.drugi{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 47);
+    float: right;
+}
