@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header a{
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: center;
+    
+}
+.parent {
+    background-color: lightblue;
+    height:800px ;
+    margin: auto;
+
+
+}
+.header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.parent h1{
+    flex-grow: 10;
+    justify-content: center;
+    align-self: center;
+}
+
+.box1 {
+background-color: lightgray;
+height:100px;
+width: 200px;
+display: flex;
+justify-content: space-between;
+}
+.box2 {
+    background-color: lightgray;
+    height:100px;
+    width: 200px;
+    display: flex;
+
+    }.box3 {
+        background-color: lightgray;
+        height:100px;
+        width: 200px;
+        display: flex;
+        }
+
+h1{
+    text-align: center;
+text-transform: capitalize;
+
+}
+p{
+    text-align: center;
+}
+button{
+    flex-grow: 1;
+    justify-content: center;
+    align-self: center;
+    width: 20px;
+
+
+}
+.glavni{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+.text{
+    background-color: greenyellow;
+}
+@media screen (max-width 500px) {
+    
+}

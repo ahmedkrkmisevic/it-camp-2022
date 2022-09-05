@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+
+}
+.glavni{
+    height: 500px;
+    background-color: rgb(114, 112, 108);
+    width:100vw;
+    display: flex;
+    }
+
+.prvi{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+    .slika{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        margin: auto;
+}
+.prvi h1{
+    font-size: 35x;
+    text-transform: capitalize;
+    
+}
+.prvi p{
+    font-size: 20px;
+    padding-top: 15px;
+} 
+.prvi button{
+    color: white;
+    background-color: red;
+    border: solid red 1px;
+    border-radius: 20px;
+}
+.prvi a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.innerheader{
+    color: white;
+}
+

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+}
+.glavni{
+    background-color:yellow ;
+    height: 500vw;
+    width: 500vw;
+    overflow: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    z-index: 3;
+}
+.box2{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    z-index: 2;
+}.box3{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 150px;
+    position: absolute;
+}
