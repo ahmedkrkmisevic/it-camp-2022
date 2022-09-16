@@ -9,20 +9,20 @@
 
 //  1.aritmeticki operatori;
 // +sabiranje;
-console.log(5+2)
+console.log(5 + 2)
 // -oduzimanje:
-console.log(5-2)
+console.log(5 - 2)
 // *mnozenje
-console.log(5*2)
+console.log(5 * 2)
 // **steponovanje
-console.log(5**2)
-console.log(2**3)
+console.log(5 ** 2)
+console.log(2 ** 3)
 // /deljenje;
-console.log(10/2)
+console.log(10 / 2)
 // %procenat
-console.log(5%2)
-console.log(12%2)
-console.log(13%5)
+console.log(5 % 2)
+console.log(12 % 2)
+console.log(13 % 5)
 // operator++povecanje za 1:
 let x = 5;
 x++;
@@ -51,14 +51,14 @@ console.log(d)
 // 3.javascript string operatori;
 // za spajanje sringova mozemo koristiti +operator.
 // ako izvrsimo dodavanje stringa nekom broju (broja nekom stringu )preko +operatora dobicemo string.
-let m,n;
-m="danas je bilo"
+let m, n;
+m = "danas je bilo"
 n = "lepo vreme"
-console.log(m+" "+n);
-console.log(55+m);
+console.log(m + " " + n);
+console.log(55 + m);
 
 // neke karakteristike vezane za +,-,*,/:
-console.log(5+"5");
-console.log(5-"4");
-console.log(5*"4");
-console.log(5/"4");
+console.log(5 + "5");
+console.log(5 - "4");
+console.log(5 * "4");
+console.log(5 / "4");
