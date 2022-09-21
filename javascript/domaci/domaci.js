@@ -8,8 +8,8 @@ function listPapira() {
     } else if (duzina < 0 || duzina > 300) {
         return `duzina mora biti izmedju 0-300`;
     } else {
-        let ukupno = 2 * sirina + 2 * duzina;
-        return `ukupna povrsina papira iznosi  ${sirina * duzina ** 2}`
+        let ukupno = sirina * duzina;
+        return `ukupna povrsina papira iznosi  ${ukupno}`
 
     }
 }
