@@ -25,6 +25,6 @@ function teren() {
         return `duzina mora biti izmedju 1-100`;
     } else {
         let ukupno = 2 * sirina + 2 * duzina;
-        return `ukupno metara koje ce sportista da prodje $(ukupno)metara `;
+        return `ukupno metara koje ce sportista da prodje $()metara `;
     }
 } console.log(teren());
