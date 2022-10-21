@@ -69,13 +69,25 @@ let minimum3 = Math.max.apply(null, brojevi)
 
 //3.pravljenje funkcije koja nam vraca minimum(maksimum).
 
-const min = (arr) => {
-    let minimum = Number.POSITIVE_INFINITY
-    for (number of arr) {
-        if (number < minimum) {
-            minimum = number
-        } return minimum
-    }
+// const min = (arr) => {
+//     let minimum = Number.POSITIVE_INFINITY
+//     for (number of arr) {
+//         if (number < minimum) {
+//             minimum = number
+//         } return minimum
+//     }
 
+// };
+// console.log(min(brojevi));
+
+
+const max = (arr) => {
+    let maksimum = Math.max.apply(null, brojevi)
+    for (number of arr) {
+        if (number < maksimum) {
+            maksimum = number
+        }
+    }
+    return maksimum
 };
-console.log(min(brojevi));
+console.log(max(brojevi));
