@@ -17,3 +17,20 @@ function noviNiz(arr) {
 };
 
 console.log(noviNiz(niz2));
+
+
+// const nizz = [1, 2, 3]
+// nizz = [4, 6, 5]; //NIJE DOZVOLJENA REINICIJALIZACIJA KOD CONST PROMENLJIVE
+
+
+2.//NACIN
+const godine = [21, 22, 23, 10]
+const punoletni2 = godine.map((element) => {
+    if (element > 17) {
+        return element;
+    } else {
+
+    }
+
+})
+console.log(punoletni2);
