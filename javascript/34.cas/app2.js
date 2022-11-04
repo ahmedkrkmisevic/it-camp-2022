@@ -168,5 +168,3 @@ console.log(punoletni2(godine));
 
 
 
-
-
