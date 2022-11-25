@@ -45,3 +45,4 @@ console.log(Number.isInteger(a));
 
 
 
+
