@@ -67,3 +67,4 @@ const thirdTask = function () {
         }
     }
 }
+console.log(thirdTask());

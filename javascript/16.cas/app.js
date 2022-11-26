@@ -1,4 +1,4 @@
-// split() metoda ce izvrsiti konv erzaciju stringa u niz (array)
+// split() metoda ce izvrsiti konverzaciju stringa u niz (array)
 
 var recenica = "zelimo izvrsiti konverzaciju ove recenice u niz."
 var recenica2 =
