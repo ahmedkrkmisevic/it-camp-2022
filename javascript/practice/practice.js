@@ -7,5 +7,5 @@ const ime2 = ime.map((element) => element + " krkmisevic")
 console.log(ime2);
 
 const voce = ["jabuka", "kruska", "jagoda", "mandarina", "breskva"]
-const voce2 = voce.findIndex((element) => element + 1)
+const voce2 = voce.findIndex((element) => element("jagoda"))
 console.log(voce2);
