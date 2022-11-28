@@ -29,7 +29,7 @@ function ispisivanje(n) {
 // main(callback);
 
 
-// let ahmed = [3 + 5 + 7]
+// let ahmed = [3 + 5 + 7
 // function main2(func) {
 //     console.log("ovo je ARitmeticka sredina")
 //     func([3 + 5 + 7]);
@@ -40,21 +40,18 @@ function ispisivanje(n) {
 // }
 // main2(callback2);
 
-function main2(func) {
-    console.log("ovo je kod koji se izvrsava unutar glavne funkcije");
-    func(1, 3, 3)
 
+
+
+
+function main3(func) {
+    console.log("ovo je kod koji se izvrsava unutar glavne funkciije ");
+    func(2, 5, 6)
 }
-
-function averageValue(arg1, arg2, arg3) {
+function aritmetickasred(arg1, arg2, arg3) {
     let average = +(((arg1 + arg2 + arg3)) / 3).toFixed(2);
-    console.log(`aritmeticka sredina je:${average}`);
-}
-main2(averageValue);
-
-
-
-
-
+    console.log(`aritmeticka sredina je ${average}`);
+};
+main3(aritmetickasred);
 
 

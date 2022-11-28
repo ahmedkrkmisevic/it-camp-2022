@@ -51,7 +51,7 @@ const DATA2 = ["a", "b", "c", "d", "e"];
 const oldTask = (arr1, arr2) => {
     const newArr = arr1.concat(arr2);
     const newArr2 = newArr.filter((el) => el % 2 === 0);
-    newArr2.unshift(10, 20);
+    newArr2.pop(11, 29);
     return `Prvi pomocni niz je: ${newArr}, \nDrugi pomocni niz je: ${newArr2}`;
 };
 
@@ -68,14 +68,14 @@ console.log(oldTask(DATA1, DATA2));
 
 const nizBrojeva = [2, 26, 38, 75, 11, 29];
 
-function firstTask(arr) {
-    const duzina = arr.length;
-    const suma = arr.reduce(
-        (previousValue, currentValue) => previousValue + currentValue
-    );
-    return +(suma / duzina).toFixed(2);
-}
-console.log(firstTask(nizBrojeva));
+// function firstTask(arr) {
+//     const duzina = arr.length;
+//     const suma = arr.reduce(
+//         (previousValue, currentValue) => previousValue + currentValue
+//     );
+//     return +(suma / duzina).toFixed(2);
+// }
+// console.log(firstTask(nizBrojeva));
 
 const secondTask2 = (arr) => {
     const totalDistanceInKilometers = arr

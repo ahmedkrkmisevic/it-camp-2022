@@ -30,9 +30,9 @@ console.log(niz.includes("mejra"));
 
 const indeksi = niz.keys() //array iterator object.
 
-for (let indeks of indeksi) {
-    console.log(indeks);
-}
+// for (let indeks of indeksi) {
+//     console.log(indeks);
+// }
 
 const entries = niz.entries(); //array iterator object
 for (item of entries) {
