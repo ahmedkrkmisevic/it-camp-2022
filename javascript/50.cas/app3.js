@@ -14,3 +14,14 @@ const stringovi = (A, B) => {
 };
 console.log(stringovi("Pera", "sladoled"));
 console.log(stringovi("ovo je sada duzi string ", "sladoled"));
+
+
+function func2() {
+    console.log("ss");
+}
+
+func2();
+
+const niz = [12, false];
+
+module.exports = niz;
