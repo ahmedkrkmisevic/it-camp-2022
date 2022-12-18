@@ -1,4 +1,5 @@
-// Javascript Maps//
+
+mm// Javascript Maps//
 
 // mape sadrze - key value parove gde kljucevi mogu biti bilo koji tip podatka.
 
@@ -36,4 +37,8 @@ fruits.forEach((key, value) => console.log(key, value));
 
 // entries() - vraca iterator u vidu key value parova.
 console.log(fruits.entries());
+
+
+
+
 
