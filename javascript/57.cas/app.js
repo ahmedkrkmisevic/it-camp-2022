@@ -46,14 +46,26 @@ class aditionalInfo extends User {
     }
 
     numberHandler(state, numberPhone) {
-        findState = this.statesArr.find(s => s.state === state);
-        return numberPhone.replace(numberPhone[0], this.findState.cId)
-
+        this.findState = this.statesArr.find((s) => s.state === state);
+        return numberPhone.replace(numberPhone[0], this.findState.cId);
     }
+    nesto() {
+        return {
+            name: `${newUser.name}`,
+            lName: `${newUser.lName}`,
+            yearofBirth: yearofBirth`${newUser.yearofBirth}`,
+            street: `${this.street}`,
+            city: `${this.city}`,
+            state: `${this.state}`,
+            numberphone: `${this.numberPhone}`,
+            number: `${this.number}`
+        }
+    }
+
 }
 const newInfo = new aditionalInfo("hadzet", "novi paazar", "srbija", 066317)
 console.log(newInfo);
-
+console.log(nesto());
 const newUser = new User("ahmed", "krkmisevic", 2003)
 console.log(newUser);
 const additional = new aditionalInfo("rifatab", "")
