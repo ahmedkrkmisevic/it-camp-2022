@@ -1,5 +1,4 @@
 class Car {
-
     constructor(carName, carType) {
         this.name = carName;
         this.type = carType;
