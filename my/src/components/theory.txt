@@ -15,3 +15,5 @@ it can lead to unexpected behaviour
 bottomline a component is the most basic and mosr=t used for building 
 a block in react and pureComponent
 is used when it needs some special optimization.
+props(properties) is a way for manipulating data and satets 
+    We can sned date through props and we can send date to parent throught props.
