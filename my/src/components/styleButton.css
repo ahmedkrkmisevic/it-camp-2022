@@ -1,0 +1,16 @@
+.styledButton {
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  background-color: aqua;
+  height: 50px;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
