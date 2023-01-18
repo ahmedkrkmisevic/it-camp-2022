@@ -1,7 +1,7 @@
 import React from "react";
-import "./styledButton.css";
+import "./styleButton.css";
 
-const StyledButton = (props) => {
+const StyleButton = (props) => {
   var ButtonText = "Click me";
 
   function buttonHandler() {
@@ -11,10 +11,10 @@ const StyledButton = (props) => {
   }
 
   return (
-    <button className="styledButton" onClick={() => buttonHandler()}>
+    <button className="styleButton" onClick={props.onClickHandler}>
       {props.innerText}
     </button>
   );
 };
 
-export default StyledButton;
+export default StyleButton;

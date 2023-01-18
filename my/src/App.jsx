@@ -1,15 +1,26 @@
+import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Styleheader from "./components/styleheader/styleheader";
-import StyledButton from "./components/styleButton";
+import StyleButton from "./components/styleButton/styleButton";
+const App = () => {
+  const [innerText, setInnerText] = useState("");
+  const [clicked, setClicked] = useState(false);
 
-function App() {
+  useEffect(() => {
+    clicked ? setInnerText("clicked") : setInnerText("click me");
+  }, [clicked]);
+
+  function buttonClick() {
+    setClicked(!clicked);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Styleheader text="header"> </Styleheader>
-        <StyledButton text="button"></StyledButton>
+        <StyleButton innerText={innerText} onClickHandler={buttonClick} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -24,6 +35,5 @@ function App() {
       </header>
     </div>
   );
-}
-
+};
 export default App;
