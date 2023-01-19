@@ -16,5 +16,3 @@ const StyleButton = (props) => {
     </button>
   );
 };
-
-export default StyleButton;
