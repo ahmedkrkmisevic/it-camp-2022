@@ -1,5 +1,6 @@
 import React from "react";
 import StyleButton from "../styleButton/styleButton";
+import "./StyledForm.css";
 import StyledInput from "../StyledInput/StyledInput";
 import { useState, useEffect } from "react";
 

@@ -1,0 +1,15 @@
+.StyledForm {
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+}
