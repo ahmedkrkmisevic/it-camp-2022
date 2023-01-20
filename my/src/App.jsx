@@ -4,29 +4,14 @@ import "./App.css";
 import Styleheader from "./components/styleheader/styleheader";
 import StyleButton from "./components/styleButton/styleButton";
 import StyledInput from "./components/StyledInput/StyledInput";
+import StyledForm from "./components/StyledForm/StyledForm";
 const App = () => {
-  const [innerText, setInnerText] = useState("");
-  const [clicked, setClicked] = useState(false);
-  const [inputValue, setInputValue] = useState();
-
-  useEffect(() => {
-    clicked ? setInnerText("clicked") : setInnerText("click me");
-  }, [clicked]);
-
-  function buttonClick() {
-    setClicked(!clicked);
-  }
-  function onChangeFunction(event) {
-    setInputValue(event.target.value);
-  }
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Styleheader text="header"> </Styleheader>
-        <StyleButton innerText={innerText} onClickHandler={buttonClick} />
-        <StyledInput onChangeHandler={onChangeFunction} value={inputValue} />
+        <StyledForm />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
