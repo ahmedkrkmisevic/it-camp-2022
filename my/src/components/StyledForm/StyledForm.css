@@ -6,6 +6,7 @@
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  /* border-block-start-style: dashed; */
 }
 label {
   display: block;
