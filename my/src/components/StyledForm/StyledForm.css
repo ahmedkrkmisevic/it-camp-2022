@@ -8,6 +8,7 @@
   cursor: pointer;
   /* border-block-start-style: dashed; */
   /* display: block; */
+  /* float: inline-end; */
 }
 label {
   display: block;
