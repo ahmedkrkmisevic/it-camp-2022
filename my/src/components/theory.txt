@@ -23,3 +23,4 @@ props(properties) is a way for manipulating data and satets
     cimponent 
     Parent cimponent can have more than one child components
     Child components ca be also found in other components as children(prop).
+    children is a props is a reserved name.
