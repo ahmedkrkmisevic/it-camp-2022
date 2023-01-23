@@ -5,30 +5,38 @@ import Styleheader from "./components/styleheader/styleheader";
 import StyleButton from "./components/styleButton/styleButton";
 import StyledInput from "./components/StyledInput/StyledInput";
 import StyledForm from "./components/StyledForm/StyledForm";
+import CustomDiv from "./components/CustomDiv/CustomDiv";
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Styleheader text="header"> </Styleheader>
-        <StyledForm />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CustomDiv>
+          <h4>{fullname}</h4>
+        </CustomDiv>
+        <CustomForm sendData={(name, lname) => dataGrabber(name, lname)} />
+      </header>
+    </div>
+  );
+
+  function dataGrabber(name, lname) {
+    let fullname = name + " " + lname;
+    console.log(fullname);
+    FullName(fullname);
+  }
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <CustomDiv>
+          <h4>{fullname}</h4>
+        </CustomDiv>
+        <CustomForm sendData={(name, lname) => dataGrabber(name, lname)} />
       </header>
     </div>
   );
 };
-export default App;
+
 // import React, { useState, useEffect } from "react";
 // import logo from "./logo.svg";
 // import React from "react";
