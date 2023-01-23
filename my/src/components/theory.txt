@@ -17,3 +17,9 @@ a block in react and pureComponent
 is used when it needs some special optimization.
 props(properties) is a way for manipulating data and satets 
     We can sned date through props and we can send date to parent throught props.
+
+    Parent component is component which is created 
+    Child component is component which is inckuded in Paarent
+    cimponent 
+    Parent cimponent can have more than one child components
+    Child components ca be also found in other components as children(prop).
