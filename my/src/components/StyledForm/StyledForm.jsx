@@ -21,17 +21,17 @@ const StyledForm = (props) => {
   }
 
   return (
-    <form>
-      <label>Username</label>
-      <StyleButton innerText={innerText} onClickHandler={buttonClick} />
-      <StyledInput onChangeHandler={onChangeFunction} value={inputValue} />
-    </form>
+    <div>
+      <StyledInput onChangeHandler={nameHandler} value={name} />
+      <StyledInput onChangeHandler={lastNameHandler} value={lastName} />
+      <StyleButton
+        onClickHnadler={() => props.sendData(name, lastName)}
+        innerText="send"
+      />
+    </div>
   );
 };
 export default StyledForm;
-// import React, { useState } from "react";
-// import StyledInput from "../StyledInput/StyledInput";
-// import StyledButton from "../StyledButton/StyledButton";
 
 // const CustomForm = () => {
 //   const [name, setName] = useState("");
