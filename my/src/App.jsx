@@ -22,10 +22,10 @@ const App = () => {
         <CustomForm sendData={(name, lName) => dataGrabber(name, lName)} />
       </header>
     </div>
-    <>
-      <ToDo />
     </>
+      <ToDo />
+      
   );
-};
+  };
 
 export default App;
