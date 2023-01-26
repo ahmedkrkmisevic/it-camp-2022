@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import CustomForm from "./components/CustomForm/CustomForm";
 import CustomDiv from "./components/CustomDiv/CustomDiv";
@@ -14,18 +15,16 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
-      <header className='App-header'>
+    <div className="App">
+      <header className="App-header">
         <CustomDiv>
           <h4>{fullName}</h4>
         </CustomDiv>
         <CustomForm sendData={(name, lName) => dataGrabber(name, lName)} />
+        <ToDo></ToDo>
       </header>
     </div>
-    </>
-      <ToDo />
-      
   );
-  };
+};
 
 export default App;
