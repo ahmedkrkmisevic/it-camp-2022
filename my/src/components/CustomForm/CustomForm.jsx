@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StyledInput from "../StyledInput/StyledInput";
-import StyledButton from "../StyledButton/StyledButton";
+import StyleButton from "../styleButton/styleButton";
 
 const CustomForm = () => {
   const CustomForm = (props) => {
@@ -17,8 +17,8 @@ const CustomForm = () => {
       <div>
         <StyledInput onChangeHandler={nameHandler} value={name} />
         <StyledInput onChangeHandler={lastNameHandler} value={lastName} />
-        <StyledButton innerText="Send" />
-        <StyledButton
+        <StyleButton innerText="Send" />
+        <StyleButton
           onClickHandler={() => props.sendData(name, lastName)}
           innerText="Send"
         />
