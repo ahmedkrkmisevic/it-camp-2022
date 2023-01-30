@@ -18,6 +18,7 @@ const App = () => {
     // Counter state is decremented
     setCounter(counter - 1);
   };
+  const isDisabled = counter <= 0 ? true : false;
 
   return (
     <div
