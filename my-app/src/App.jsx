@@ -56,7 +56,7 @@ const App = () => {
           }}
           onClick={handleClick1}
         >
-          Increment
+          Povecanje
         </button>
         <button
           style={{
@@ -70,7 +70,7 @@ const App = () => {
           }}
           onClick={handleClick2}
         >
-          Decrement
+          Smanjenje
         </button>
       </div>
     </div>
