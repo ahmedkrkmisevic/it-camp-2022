@@ -31,3 +31,4 @@ const CustomDiv = ({
   </div>;
 };
 export default CustomDiv;
+console.log(1);
