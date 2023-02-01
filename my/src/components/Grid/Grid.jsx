@@ -18,3 +18,4 @@ const GridCmp = () => {
     </Grid>
   );
 };
+export default GridCmp;
