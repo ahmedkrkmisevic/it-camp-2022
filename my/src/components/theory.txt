@@ -24,3 +24,15 @@ props(properties) is a way for manipulating data and satets
     Parent cimponent can have more than one child components
     Child components ca be also found in other components as children(prop).
     children is a props is a reserved name.
+
+    cd- change directory je komanda u terminalu koja sluzi za navigiranje
+     kroz foldere unutar sitema.
+
+     ls-je komanda koja sluzi za izlistavanje fajlova i foldera unutar foldera.
+
+     mk-dir - make directory je komanda koja sluzi za kreiranje novog direktorija
+     ili foldera.
+
+     rm-is a command which removes files or directory for directory we use special flag-rf "rm-rf someFolder"
+
+     for stepback we use "cd.."command.
