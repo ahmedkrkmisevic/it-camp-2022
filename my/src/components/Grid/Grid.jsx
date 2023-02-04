@@ -26,7 +26,7 @@ const GridCmp = () => {
         <CustomDiv width="100%"> xs=6 </CustomDiv>
       </Grid>
       <Grid item xs={6}>
-        <CustomDiv width="100%"> xs=6 </CustomDiv>
+        <CustomDiv width="100%"> xs=4 </CustomDiv>
       </Grid>
     </Grid>
   );
