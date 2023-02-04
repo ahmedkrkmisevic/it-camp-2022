@@ -33,3 +33,4 @@ const GridCmp = () => {
 };
 
 export default GridCmp;
+// The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
