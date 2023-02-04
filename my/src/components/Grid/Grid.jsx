@@ -34,3 +34,4 @@ const GridCmp = () => {
 
 export default GridCmp;
 // The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
+// The grid creates visual consistency between layouts while allowing flexibility across a wide variety of designs. Material Design's responsive UI is based on a 12-column grid layout.
