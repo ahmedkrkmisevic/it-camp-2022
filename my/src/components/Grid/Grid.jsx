@@ -45,3 +45,4 @@ export default GridCmp;
 // There are five grid breakpoints: xs, sm, md, lg, and xl.
 // Integer values can be given to each breakpoint, indicating how many of the 12 available columns are occupied by the component when the viewport width satisfies the breakpoint constraints.
 // // If you are new to or unfamiliar with flexbox, we encourage you to read this CSS-Tricks flexbox guide.
+// The rowSpacing and columnSpacing props allow for specifying the row and column gaps independently. It's similar to the row-gap and column-gap properties of CSS Grid.
