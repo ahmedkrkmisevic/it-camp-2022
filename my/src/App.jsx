@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import ToDo from "./components/ToDo/ToDo";
 import GridCmp from "./components/Grid/Grid";
-import PrimaryButton from "./components/PrimaryButton/PrimaryButton";
+import PrimaryButton from "./components/PrimaryButton/PrimaryButton.jsx";
 import StyledButton from "./components/StyledButton/StyledButton";
 
 const App = () => {
