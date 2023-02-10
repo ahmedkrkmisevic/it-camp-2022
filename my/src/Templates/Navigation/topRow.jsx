@@ -4,7 +4,11 @@ import { Grid } from "@mui/material";
 const TopRow = () => {
   return (
     <Grid container="row">
-      <CustomDiv bgColor={color}></CustomDiv>
+      <CustomDiv
+        bgColor={colors.secondColor}
+        width="100%"
+        height="30px"
+      ></CustomDiv>
     </Grid>
   );
 };
