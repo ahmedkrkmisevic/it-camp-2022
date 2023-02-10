@@ -9,6 +9,7 @@ const CustomDiv = ({
   border,
   padding,
   margin,
+  bgColor,
 }) => {
   const divWidth = width ? width : 100;
   const divHeight = height ? height : 100;
@@ -16,6 +17,7 @@ const CustomDiv = ({
   const divBorder = border ? border : "1px solid black";
   const divMargin = margin ? margin : 0;
   const divPadding = padding ? padding : 0;
+  const backGroundColor = bgColor ? bgColor : "white";
 
   return (
     <div
@@ -26,6 +28,7 @@ const CustomDiv = ({
         border: divBorder,
         margin: divMargin,
         padding: divPadding,
+        backGroundColor: backGroundColor,
       }}
     >
       {children}
