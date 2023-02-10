@@ -1,5 +1,9 @@
 export const accentColor = "#e88f23";
 export const secondColor = "#F0F0F9";
+export const colors = {
+    accentColor: "#e88f23",
+    secondColor: "#F0F0F9",
+}
 
 export const fontWeight = {
     light: '100',
