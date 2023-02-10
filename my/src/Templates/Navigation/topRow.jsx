@@ -2,7 +2,8 @@ import React from "react";
 import { Grid } from "@mui/material/Grid";
 import { colors } from "../../util/theme";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { PhoneIcon, EmailIcon } from "@mui/icons-material/";
+import PhoneIcon from "@mui/icons-material/";
+
 const TopRow = () => {
   return (
     <Grid container="row">
