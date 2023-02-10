@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid } from "@mui/material/Grid";
 import { colors } from "../../util/theme";
-
+import CustomDiv from "../../components/CustomDiv/CustomDiv";
+import { PhoneIcon, EmailIcon } from "@mui/icons-material/";
 const TopRow = () => {
   return (
     <Grid container="row">
@@ -11,7 +12,10 @@ const TopRow = () => {
         height="30px"
         padding="0px 5 %"
         border="0px"
-      ></CustomDiv>
+      >
+        <PhoneIcon />
+        <P>+381066317687</P>
+      </CustomDiv>
     </Grid>
   );
 };
