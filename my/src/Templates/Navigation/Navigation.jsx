@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import CustomDiv from "../../components/CustomDiv/CustomDiv";
+import TopRow from "./topRow";
 
 const Navigation = () => {
   return (
