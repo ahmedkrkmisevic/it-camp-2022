@@ -15,7 +15,7 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item lg={6} spacing={0}>
+        <Grid item lg={6} spacing={9}>
           <CustomDiv
             width="50%"
             height="auto"
