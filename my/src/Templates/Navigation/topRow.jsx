@@ -3,6 +3,7 @@ import { Grid } from "@mui/material/Grid/Grid";
 import { colors } from "../../util/theme";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { fontSize } from "@mui/system";
 
 const TopRow = () => {
   return (
@@ -14,12 +15,27 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <CustomDiv width="50%" border="0px" bgColor="inherit">
-          <PhoneIcon />
-          <P>+381066317687</P>
-        </CustomDiv>
-        Grid
-        <CustomDiv width="50%" border="0px" bgColor="inherit"></CustomDiv>
+        <Grid item lg={6} spacing={0}>
+          <CustomDiv
+            width="50%"
+            height="auto"
+            border="0px"
+            bgColor="inherit"
+            display="flex"
+            alignItems="center"
+          >
+            <PhoneIcon style={{ fontSize: fontSize.normal }} />
+            <P>+381066317687</P>
+          </CustomDiv>
+          <CustomDiv
+            width="50%"
+            height="auto"
+            border="0px"
+            bgColor="inherit"
+            display="flex"
+            alignItems="center"
+          ></CustomDiv>
+        </Grid>
       </Grid>
     </CustomDiv>
   );
