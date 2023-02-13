@@ -19,7 +19,7 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6} spacing={2}>
+        <Grid item md={6} lg={6} spacing={0}>
           <CustomDiv
             display="flex"
             alignItems="flex-start"
