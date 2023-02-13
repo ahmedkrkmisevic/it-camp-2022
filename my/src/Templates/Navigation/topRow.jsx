@@ -3,9 +3,8 @@ import Grid from "@mui/material/Grid";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { colors, fontSize } from "../../util/theme";
 import PhoneIcon from "@mui/icons-material/Phone";
-import Text from "../../components/Text/Text";
 
-const topRow = () => {
+const TopRow = () => {
   return <Grid container direction="row"></Grid>;
   return (
     <CustomDiv
@@ -17,11 +16,7 @@ const topRow = () => {
     >
       <Grid container direction="row">
         <Grid item md={6} lg={6} spacing={0}>
-          <CustomDiv
-            display="flex"
-            alignItems="flex-start"
-            justifyItems="flex-start"
-          >
+          <CustomDiv display="flex" alignItems="center">
             <PhoneIcon
               style={{
                 fontSize: fontSize.normal,
@@ -38,4 +33,4 @@ const topRow = () => {
   );
 };
 
-export default topRow;
+export default TopRow;

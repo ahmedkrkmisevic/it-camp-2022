@@ -1,6 +1,5 @@
 import React from "react";
 import "./CustomDiv.css";
-
 const CustomDiv = ({
   children,
   width,
@@ -17,12 +16,15 @@ const CustomDiv = ({
   alignContent,
 }) => {
   const divWidth = width ? width : 100;
+  const divHeight = height ? height : 100;
+  const divWidth = width ? width : "auto";
   const divHeight = height ? height : "auto";
   const divBR = borderRadius ? borderRadius : 0;
   const divBorder = border ? border : "1px solid black";
+  const divBorder = border ? border : "0px";
   const divMargin = margin ? margin : 0;
   const divPadding = padding ? padding : 0;
-  const backGroundColor = bgColor ? bgColor : "inherit";
+  const backgroundColor = bgColor ? bgColor : "inherit";
   const disp = display ? display : "block";
   const jc = justifyContent ? justifyContent : "flex-start";
   const ji = justifyItems ? justifyItems : "center";
@@ -38,7 +40,7 @@ const CustomDiv = ({
         border: divBorder,
         margin: divMargin,
         padding: divPadding,
-        backGroundColor: backGroundColor,
+        backgroundColor: backgroundColor,
         display: disp,
         justifyContent: jc,
         justifyItems: ji,
@@ -50,17 +52,4 @@ const CustomDiv = ({
     </div>
   );
 };
-
 export default CustomDiv;
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);
-// console.log(1);

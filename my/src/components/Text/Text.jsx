@@ -10,6 +10,5 @@ const Text = styled.p`
   text-decoration: ${(props) =>
     props.textDecoration ? props.textDecoration : "none"};
   letter-spacing: ${(props) => (letterSpacing ? props.letterSpacing : "1px")};
-  vertical-align: ${props};
 `;
 export default Text;
