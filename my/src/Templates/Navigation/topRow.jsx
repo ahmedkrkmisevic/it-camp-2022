@@ -1,11 +1,15 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
+import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { colors, fontSize } from "../../util/theme";
+import { colors } from "../../util/theme";
 import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import Text from "../../components/Text/Text";
+import { fontSize } from "../../util/theme";
+import { getScreenWidth } from "../../util/helpers";
 
 const TopRow = () => {
-  return <Grid container direction="row"></Grid>;
+  const screenWidth = getScreenWidth();
   return (
     <CustomDiv
       bgColor={colors.secondColor}
@@ -16,13 +20,29 @@ const TopRow = () => {
     >
       <Grid container direction="row">
         <Grid item md={6} lg={6} spacing={0}>
-          <CustomDiv display="flex" alignItems="center">
+          <CustomDiv
+            display="flex"
+            alignItems="flex-start"
+            justifyItems=" flex-start"
+          >
             <PhoneIcon
               style={{
                 fontSize: fontSize.normal,
               }}
             />
-            <p>+38163333333</p>
+            <Text fontSize={fontSize.small}>+381637412151</Text>
+            <CustomDiv
+              display="flex"
+              alignItems="flex-start"
+              margin="0px 0px 0px 5px"
+            >
+              <EmailIcon
+                style={{
+                  fontSize: fontSize.normal,
+                }}
+              />
+              <Text fontSize={fontSize.small}>info@gmail.com</Text>
+            </CustomDiv>
           </CustomDiv>
         </Grid>
         <Grid item md={6} lg={6} spacing={0}>
