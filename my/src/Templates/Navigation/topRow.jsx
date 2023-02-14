@@ -14,7 +14,7 @@ const TopRow = () => {
     <CustomDiv
       bgColor={colors.secondColor}
       width="100%"
-      height="30px"
+      height="0px"
       padding="0px 5%"
       border="0px"
     >
