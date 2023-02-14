@@ -14,9 +14,9 @@ const TopRow = () => {
     <CustomDiv
       bgColor={colors.secondColor}
       width="100%"
-      height="0px"
+      height="30px"
       padding="0px 5%"
-      border="0px"
+      border="50px"
     >
       <Grid container direction="row">
         <Grid item md={6} lg={6} spacing={0}>
