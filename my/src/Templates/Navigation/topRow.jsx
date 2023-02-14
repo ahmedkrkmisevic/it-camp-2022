@@ -16,10 +16,10 @@ const TopRow = () => {
       width="100%"
       height="30px"
       padding="0px 5%"
-      border="0px"
+      border="10px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6} spacing={6}>
+        <Grid item md={6} lg={6} spacing={0}>
           <CustomDiv
             display="flex"
             alignItems="flex-start"
