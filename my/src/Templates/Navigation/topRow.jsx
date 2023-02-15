@@ -47,16 +47,19 @@ const TopRow = () => {
               <TwitterIcon
                 style={{
                   fontSize: fontSize.normal,
+                  colors: colors.gray,
                 }}
               />
               <FacebookIcon
                 style={{
                   fontSize: fontSize.normal,
+                  colors: colors.gray,
                 }}
               />
               <InstagramIcon
                 style={{
                   fontSize: fontSize.normal,
+                  color: colors.gray,
                 }}
               />
               <Text fontSize={fontSize.small}>info@gmail.com</Text>
