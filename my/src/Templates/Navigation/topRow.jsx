@@ -11,32 +11,55 @@ import Text from "../../components/Text/Text";
 import { fontSize } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers";
 
+const SocialIcons = () => (
+  <>
+    <TwitterIcon
+      style={{
+        fontSize: fontSize.normal,
+        colors: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+    <FacebookIcon
+      style={{
+        fontSize: fontSize.normal,
+        colors: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+    <InstagramIcon
+      style={{
+        fontSize: fontSize.normal,
+        color: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+  </>
+);
+
 const TopRow = () => {
   const screenWidth = getScreenWidth();
   return (
     <CustomDiv
       bgColor={colors.secondColor}
+      display="flex"
       width="100%"
       height="30px"
       padding="0px 5%"
-      border="50px"
+      border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6} spacing={0}>
-          <CustomDiv
-            display="flex"
-            alignItems="flex-start"
-            justifyItems=" flex-start"
-          >
+        <Grid item md={6} lg={6}>
+          <CustomDiv display="flex" alignItems="center">
             <PhoneIcon
               style={{
                 fontSize: fontSize.normal,
               }}
             />
-            <Text fontSize={fontSize.small}>+381637412151</Text>
+            <Text fontSize={fontSize.small}>+381066317687</Text>
             <CustomDiv
               display="flex"
-              alignItems="flex-start"
+              alignItems="center"
               margin="0px 0px 0px 5px"
             >
               <EmailIcon
@@ -44,30 +67,18 @@ const TopRow = () => {
                   fontSize: fontSize.normal,
                 }}
               />
-              <TwitterIcon
-                style={{
-                  fontSize: fontSize.normal,
-                  colors: colors.gray,
-                }}
-              />
-              <FacebookIcon
-                style={{
-                  fontSize: fontSize.normal,
-                  colors: colors.gray,
-                }}
-              />
-              <InstagramIcon
-                style={{
-                  fontSize: fontSize.normal,
-                  color: colors.gray,
-                }}
-              />
               <Text fontSize={fontSize.small}>info@gmail.com</Text>
             </CustomDiv>
           </CustomDiv>
         </Grid>
-        <Grid item md={6} lg={6} spacing={0}>
-          <CustomDiv width="50%" border="0px" bgColor="inherit"></CustomDiv>
+        <Grid item md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+          >
+            <SocialIcons />
+          </CustomDiv>
         </Grid>
       </Grid>
     </CustomDiv>
