@@ -44,6 +44,21 @@ const TopRow = () => {
                   fontSize: fontSize.normal,
                 }}
               />
+              <TwitterIcon
+                style={{
+                  fontSize: fontSize.normal,
+                }}
+              />
+              <FacebookIcon
+                style={{
+                  fontSize: fontSize.normal,
+                }}
+              />
+              <InstagramIcon
+                style={{
+                  fontSize: fontSize.normal,
+                }}
+              />
               <Text fontSize={fontSize.small}>info@gmail.com</Text>
             </CustomDiv>
           </CustomDiv>
