@@ -1,10 +1,18 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/img.png";
+import Text from "../../components/Text/Text";
 import { colors } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers";
 import { fontSize } from "../../util/theme";
+import PersonIcon from "@mui/icons-material/Person";
+import StarIcon from "@mui/icons-material/Star";
+import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import LockIcon from "@mui/icons-material/Lock";
+
+const RightMenu = () => {};
 
 const MainBar = () => {
   return (
