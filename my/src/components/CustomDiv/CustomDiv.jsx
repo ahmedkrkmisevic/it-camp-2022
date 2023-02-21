@@ -1,4 +1,3 @@
-import { textAlign } from "@mui/system";
 import React from "react";
 import "./CustomDiv.css";
 const CustomDiv = ({
@@ -15,12 +14,13 @@ const CustomDiv = ({
   justifyItems,
   alignItems,
   alignContent,
-  letterSpacing,
-  textAlign,
   verticalAlign,
+  textAlign,
+  letterSpacing,
+  borderBottom,
 }) => {
-  const divHeight = height ? height : 100;
-  const divWidth = width ? width : 100;
+  const divWidth = width ? width : "auto";
+  const divHeight = height ? height : "auto";
   const divBR = borderRadius ? borderRadius : 0;
   const divBorder = border ? border : "0px";
   const divMargin = margin ? margin : 0;
@@ -34,6 +34,7 @@ const CustomDiv = ({
   const va = verticalAlign ? verticalAlign : "middle";
   const ta = textAlign ? textAlign : "left";
   const ls = letterSpacing ? letterSpacing : "0px";
+  const bb = borderBottom ? borderBottom : "0px";
 
   return (
     <div
@@ -53,6 +54,7 @@ const CustomDiv = ({
         verticalAlign: va,
         textAlign: ta,
         letterSpacing: ls,
+        borderBottom: bb,
       }}
     >
       {children}
