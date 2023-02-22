@@ -45,7 +45,7 @@ const TopRow = () => {
       display="flex"
       width="100%"
       height="30px"
-      padding="0px 5%"
+      padding="0px 10%"
       border="0px"
     >
       <Grid container direction="row">
