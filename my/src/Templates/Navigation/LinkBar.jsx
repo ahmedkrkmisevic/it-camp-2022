@@ -50,7 +50,7 @@ const LinkBar = () => {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label="Search input"
+                label="Pretrazi"
                 InputProps={{
                   ...params.InputProps,
                   type: "search",
