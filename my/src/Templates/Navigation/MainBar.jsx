@@ -72,14 +72,11 @@ const MainBar = () => {
             src={Logo}
             alt="Logo"
             style={{
-              width: 200,
-              height: 100,
               width: 140,
               height: "auto",
             }}
           />
         </Grid>
-        <Grid item md={6} lg={6}></Grid>
         <Grid item md={6} lg={6}>
           <RightMenu />
         </Grid>
