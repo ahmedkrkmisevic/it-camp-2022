@@ -41,7 +41,6 @@ const LinkBar = () => {
       <Grid item md={6} lg={6}>
         <CustomDiv>
           <Autocomplete
-            height="30px"
             width="70px"
             border="2px"
             freeSolo
