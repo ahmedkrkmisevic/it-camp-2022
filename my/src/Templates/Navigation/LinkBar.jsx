@@ -41,7 +41,6 @@ const LinkBar = () => {
       <Grid item md={6} lg={6}>
         <CustomDiv>
           <Autocomplete
-            border="2px"
             freeSolo
             id="free-solo-2-demo"
             disableClearable
