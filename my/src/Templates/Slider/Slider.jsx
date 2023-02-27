@@ -4,6 +4,13 @@ import girl2 from "../../assets/images/home/girl2.jpg";
 import girl3 from "../../assets/images/home/girl3.jpg";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 
+const syles = {
+  sliderContainer: {
+    height: "200px",
+    margin: "0px 10%",
+  },
+};
+
 const Slider = () => {
   const sliders = [
     {
