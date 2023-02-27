@@ -3,6 +3,14 @@ import { Carousel as SliderCarousel } from "react-responsive-carousel";
 import { fontSize } from "../../util/theme";
 
 const Carousel = ({ data }) => {
+  const styles = {
+    carouselText: {
+      position: "absolute",
+      bottom: 30,
+      left: 10,
+      right: 10,
+    },
+  };
   return (
     <SliderCarousel showThumbs={false}>
       {data.map((d) => (
