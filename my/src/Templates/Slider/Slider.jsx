@@ -20,20 +20,7 @@ const sliders = [
     imgText: "Snaha 3",
   },
 ];
-
 const Slider = () => {
-  const sliders = [
-    {
-      imgSrc: girl1,
-      imgText: "Image Text 1",
-    },
-    {
-      imgSrc: girl2,
-      imgText: "Image text 2",
-    },
-    {
-      imgSrc: girl3,
-      imgText: "Image text 3",
   const deviceWidth = getScreenWidth();
 
   const setSliderMargin =
@@ -50,15 +37,14 @@ const Slider = () => {
     sliderContainer: {
       width: "100%",
       height: "200px",
+      margin: "0px 10%",
       paddingTop: setPaddingTop,
       margin: setSliderMargin,
     },
-  ];
   };
 
-  return <Carousel data={sliders} />;
   return (
-    <Grid container direction='row'>
+    <Grid container direction="row">
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <SimplifiedDiv style={styles.sliderContainer}>
           <Carousel data={sliders} />

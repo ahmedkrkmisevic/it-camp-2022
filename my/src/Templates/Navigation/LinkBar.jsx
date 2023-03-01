@@ -1,11 +1,10 @@
-import React from "react";
 import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { fontSize } from "../../util/theme";
-import { getScreenWidth } from "../../util/helpers";
-import { colors } from "../../util/theme";
-import Autocomplete from "@mui/material/Autocomplete";
+import Text from "../../components/Text/Text";
+import { colors, fontSize } from "../../util/theme";
 import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
+import InputAdornment from "@mui/material/InputAdornment";
 
 const LinkBar = () => {
   return (
@@ -18,44 +17,54 @@ const LinkBar = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <CustomDiv display="flex" margin="0px 10px">
-          <text onclick="window.location.href='https://w3docs.com';">Home</text>
-        </CustomDiv>
-        <CustomDiv display="flex" margin="0px 10px">
-          <text onclick="window.location.href='https://w3docs.com';">Shop</text>
-        </CustomDiv>
-        <CustomDiv display="flex" margin="0px 10px">
-          <text onclick="window.location.href='https://w3docs.com';">Blog</text>
-        </CustomDiv>
-        <CustomDiv display="flex" margin="0px 10px">
-          <text onclick="window.location.href='https://w3docs.com';">
-            O nama
-          </text>
-        </CustomDiv>
-        <CustomDiv display="flex" margin="0px 10px">
-          <text onclick="window.location.href='https://w3docs.com';">
-            Kontakt
-          </text>
-        </CustomDiv>
-      </Grid>
-      <Grid item md={6} lg={6}>
-        <CustomDiv>
-          <Autocomplete
-            freeSolo
-            id="free-solo-2-demo"
-            disableClearable
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Pretrazite"
-                InputProps={{
-                  ...params.InputProps,
-                  type: "search",
-                }}
-              />
-            )}
-          />
-        </CustomDiv>
+        <Grid item sm={6} md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            gap="20px"
+            alignItems="center"
+            textAlign="center"
+          >
+            <text onclick="window.location.href='https://w3docs.com';">
+              Home
+            </text>
+
+            <text onclick="window.location.href='https://w3docs.com';">
+              Shop
+            </text>
+
+            <text onclick="window.location.href='https://w3docs.com';">
+              Blog
+            </text>
+
+            <text onclick="window.location.href='https://w3docs.com';">
+              O nama
+            </text>
+
+            <text onclick="window.location.href='https://w3docs.com';">
+              Kontakt
+            </text>
+          </CustomDiv>
+        </Grid>
+        <Grid item sm={6} md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+            height="100%"
+          >
+            <TextField
+              size="small"
+              label="Search"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </CustomDiv>
+        </Grid>
       </Grid>
     </CustomDiv>
   );
