@@ -19,6 +19,10 @@ const iconStyle = {
 
 const MainBar = () => {
   const screenWidth = getScreenWidth();
+
+  const rightMenuMargin = screenWidth === "SM" ? "20px 10px" : "0px";
+  const rightMenuJustify = screenWidth === "SM" ? "flex-start" : "flex-end";
+  const rightmenuItemsMargin = screenWidth === "SM" ? "0px 5px" : "0px 10px";
   const RightMenu = () => (
     <CustomDiv
       display="flex"
