@@ -30,31 +30,31 @@ const MainBar = () => {
       justifyContent="flex-end"
       height="100%"
     >
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <PersonIcon style={iconStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Account
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <StarIcon style={iconStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Wishlist
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <LocationSearchingIcon style={iconStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Checkout
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <ShoppingCartIcon style={iconStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Cart
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <LockIcon style={iconStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Login
