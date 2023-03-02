@@ -63,7 +63,7 @@ const MainBar = () => {
     </CustomDiv>
   );
   const alignLogo = screenWidth === "SM" ? "center" : "left";
-  const mainDivPadding = screenWidth === "SM" ? "50px 0px" : "20px 10% 10px";
+  const mainDivPadding = screenWidth === "SM" ? "55px 0px" : "20px 10% 10px";
   return (
     <CustomDiv
       bgColor="white"
