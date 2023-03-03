@@ -43,8 +43,7 @@ const TopRow = () => {
   const alignItemsInSecondDiv = screenWidth === "SM" ? "center" : "flex-start";
   const paddingDiv = screenWidth === "SM" ? "10px 0px" : "0px";
   const topHeightDiv = screenWidth === "SM" ? "auto" : "30px";
-
-  console.log(screenWidth);
+  const responsivePadding = console.log(screenWidth);
 
   return (
     <CustomDiv
@@ -52,8 +51,8 @@ const TopRow = () => {
       display="flex"
       width="100%"
       height={topHeightDiv}
-      padding="0px 10%"
       border="0px"
+      padding={responsivePadding}
     >
       <Grid container direction="row">
         <Grid item xs={12} sm={12} md={6} lg={6}>
