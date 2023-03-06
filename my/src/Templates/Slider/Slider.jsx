@@ -20,6 +20,7 @@ const sliders = [
     imgText: "Snaha 3",
   },
 ];
+
 const Slider = () => {
   const deviceWidth = getScreenWidth();
 
@@ -37,7 +38,6 @@ const Slider = () => {
     sliderContainer: {
       width: "100%",
       height: "200px",
-      margin: "0px 10%",
       paddingTop: setPaddingTop,
       margin: setSliderMargin,
     },
