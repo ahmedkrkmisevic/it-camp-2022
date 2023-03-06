@@ -1,8 +1,10 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as SliderCarousel } from "react-responsive-carousel";
-import { colors, fontSize } from "../../util/theme";
 import Text from "../Text/Text";
+import { colors, fontSize } from "../../util/theme";
 import SimplifiedDiv from "../SimplifiedDiv/SimplifiedDiv";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 const Carousel = ({ data }) => {
   const styles = {
@@ -13,6 +15,7 @@ const Carousel = ({ data }) => {
       right: 10,
     },
   };
+
   return (
     <SliderCarousel
       width="100%"
@@ -31,9 +34,14 @@ const Carousel = ({ data }) => {
           <img
             src={d.imgSrc}
             style={{ height: "100%", objectFit: "contain" }}
+            alt={d.imgText}
           />
-          <SimplifiedDiv>
-            <Text fontSize={fontSize.xLarge} color={colors.gray}>
+          <SimplifiedDiv style={styles.carouselText}>
+            <Text
+              fontSize={fontSize.xLarge}
+              color={colors.gray}
+              textAlign="left"
+            >
               {d.imgText}
             </Text>
           </SimplifiedDiv>

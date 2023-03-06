@@ -20,15 +20,18 @@ const iconStyle = {
 const MainBar = () => {
   const screenWidth = getScreenWidth();
 
-  const rightMenuMargin = screenWidth === "SM" ? "20px 10px" : "0px";
+  const rightMenuMargin = screenWidth === "SM" ? "20px 5px" : "0px";
   const rightMenuJustify = screenWidth === "SM" ? "flex-start" : "flex-end";
   const rightmenuItemsMargin = screenWidth === "SM" ? "0px 5px" : "0px 10px";
+
   const RightMenu = () => (
     <CustomDiv
       display="flex"
       alignItems="center"
-      justifyContent="flex-end"
+      justifyContent={rightMenuJustify}
+      width="100%"
       height="100%"
+      margin={rightMenuMargin}
     >
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <PersonIcon style={iconStyle} />
@@ -62,14 +65,16 @@ const MainBar = () => {
       </CustomDiv>
     </CustomDiv>
   );
+
   const alignLogo = screenWidth === "SM" ? "center" : "left";
-  const mainDivPadding = screenWidth === "SM" ? "50px 0px" : "20px 10% 10px";
+  const mainDivPadding = screenWidth === "SM" ? "20px 0px" : "20px 10% 10px";
+
   return (
     <CustomDiv
       bgColor="white"
       display="flex"
       width="100%"
-      height="30px"
+      height="auto"
       padding={mainDivPadding}
       border="0px"
     >
@@ -90,7 +95,7 @@ const MainBar = () => {
             />
           </SimplifiedDiv>
         </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <RightMenu />
         </Grid>
         <CustomDiv
@@ -103,4 +108,5 @@ const MainBar = () => {
     </CustomDiv>
   );
 };
+
 export default MainBar;
