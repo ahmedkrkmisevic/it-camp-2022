@@ -3,6 +3,11 @@ export const colors = {
     secondColor: "#F0F0E9",
     gray: "#828181",
     lightGray: "#b3b1b1",
+    lighttBlack: "#2e2d2d",
+    black: "black",
+    lightGreen: "#9de848",
+    lightRed: "#f23f35",
+    red: "red",
 };
 export const fontWeight = {
     light: "100",
@@ -13,6 +18,7 @@ export const fontWeight = {
 export const fontSize = {
     xSmall: "10px",
     small: "12px",
+    optimal: "13px",
     smallPlus: "14px",
     normal: "16px",
     medium: "18px",
