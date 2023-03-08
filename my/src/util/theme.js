@@ -8,6 +8,9 @@ export const colors = {
     lightGreen: "#9de848",
     lightRed: "#f23f35",
     red: "red",
+    white: "white",
+    dirtyWhite: "#fafdff",
+
 };
 export const fontWeight = {
     light: "100",
