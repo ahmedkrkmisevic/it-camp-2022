@@ -1,45 +1,29 @@
-import { Grid } from "@mui/material";
 import React from "react";
-import CustomDiv from "../../components/CustomDiv/CustomDiv";
+import { Grid } from "@mui/material";
+import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
+import Text from "../../components/Text/Text";
+import CategoryTab from "../CategoryTab/CategoryTab";
 
-const HomeProductPage = () => {
+const styles = {
+  container: {
+    padding: "0px 10%",
+  },
+};
+
+const ProductHomePage = () => {
   return (
-    <CustomDiv
-      bgColor="white"
-      display="flex"
-      width="100%"
-      height="auto"
-      padding="10px"
-      border="0px"
-    >
+    <SimplifiedDiv style={styles.container}>
       <Grid container direction="row">
         <Grid item md={3} lg={3}>
-          <CustomDiv
-            bgColor="white"
-            display="flex"
-            width="100%"
-            height="auto"
-            padding="10px"
-            border="1px solid black "
-          >
-            CATEGORY
-          </CustomDiv>
+          <Text>CATEGORY</Text>
+          <CategoryTab />
         </Grid>
         <Grid item md={9} lg={9}>
-          <CustomDiv
-            bgColor="white"
-            display="flex"
-            width="100%"
-            height="auto"
-            padding="10px"
-            border="1px solid black"
-          >
-            PRODUCTS
-          </CustomDiv>
+          <Text>PRODUCT</Text>
         </Grid>
       </Grid>
-    </CustomDiv>
+    </SimplifiedDiv>
   );
 };
 
-export default HomeProductPage;
+export default ProductHomePage;
