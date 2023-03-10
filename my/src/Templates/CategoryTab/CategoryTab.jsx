@@ -16,6 +16,19 @@ const CategoryTab = () => {
     category: {
       padding: "5px 0px",
     },
+    categoryContainer: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+    },
+    addIconStyle: {
+      fontSize: fontSize.medium,
+      color: colors.accentColor,
+    },
+    subCategoryContainer: {
+      fontSize: fontSize.normal,
+      color: colors.gray,
+    },
   };
   const categories = [
     {
@@ -93,12 +106,32 @@ const CategoryTab = () => {
       active: false,
     },
   ];
+
   return (
     <SimplifiedDiv style={styles.container}>
       {categories.map((cat) => {
-        return <Text>{cat.name}</Text>;
+        const filteredSubcategories = subCategory.filter(
+          (sub) => sub.categoryName === cat.name
+        );
+
+        return (
+          <>
+            <SimplifiedDiv style={styles.categoryContainer}>
+              <Text style={styles.category}>{cat.name}</Text>
+              <AddIcon style={styles.addIconStyle} />
+            </SimplifiedDiv>
+            {filteredSubcategories.length > 0 && (
+              <SimplifiedDiv>
+                {filteredSubcategories.map((sub) => (
+                  <Text>{sub.name}</Text>
+                ))}
+              </SimplifiedDiv>
+            )}
+          </>
+        );
       })}
     </SimplifiedDiv>
   );
 };
+
 export default CategoryTab;
