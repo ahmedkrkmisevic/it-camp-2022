@@ -14,7 +14,7 @@ const CategoryTab = () => {
       padding: "15px 20px",
     },
     category: {
-      padding: "5px 10px",
+      padding: "5px 0px",
     },
     categoryContainer: {
       display: "flex",
