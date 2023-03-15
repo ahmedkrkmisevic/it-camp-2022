@@ -3,12 +3,12 @@ import { Grid } from "@mui/material";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
 import CategoryTab from "../CategoryTab/CategoryTab";
-import { fontWeight } from "../../util/theme";
-import { fontSize } from "../../util/theme";
-import { colors } from "../../util/theme";
+import { colors, fontSize, fontWeight } from "../../util/theme";
+import ArticlesHomePage from "../ArticlesHomePage/ArticlesHomePage";
 
 const styles = {
   container: {
+    display: "flex",
     padding: "0px 10%",
   },
   headingContainer: {
@@ -23,8 +23,7 @@ const styles = {
     fontWeight: fontWeight.mediumBold,
   },
 };
-
-const ProductHomePage = () => {
+const ProductsHomePage = () => {
   return (
     <SimplifiedDiv style={styles.container}>
       <Grid container direction="row">
@@ -38,10 +37,10 @@ const ProductHomePage = () => {
           <SimplifiedDiv style={styles.headingContainer}>
             <Text style={styles.headingText}>Articles</Text>
           </SimplifiedDiv>
+          <ArticlesHomePage />
         </Grid>
       </Grid>
     </SimplifiedDiv>
   );
 };
-
-export default ProductHomePage;
+export default ProductsHomePage;
