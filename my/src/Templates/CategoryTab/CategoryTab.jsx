@@ -1,16 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
 import { colors, fontSize } from "../../util/theme";
 import AddIcon from "@mui/icons-material/Add";
-
+const categories = [
+  {
+    name: "Sportswear",
+    active: false,
+  },
+  {
+    name: "Mens",
+    active: false,
+  },
+  {
+    name: "Womens",
+    active: false,
+  },
+  {
+    name: "Kids",
+    active: false,
+  },
+  {
+    name: "Fashion",
+    active: false,
+  },
+  {
+    name: "Households",
+    active: false,
+  },
+  {
+    name: "Interiors",
+    active: false,
+  },
+  {
+    name: "Clothing",
+    active: false,
+  },
+  {
+    name: "Bags",
+    active: false,
+  },
+  {
+    name: "Shoes",
+    active: false,
+  },
+];
+const subCategory = [
+  {
+    categoryName: "Sportswear",
+    name: "Adidas",
+    active: false,
+  },
+  {
+    categoryName: "Sportswear",
+    name: "Nike",
+    active: false,
+  },
+  {
+    categoryName: "Sportswear",
+    name: "Puma",
+    active: false,
+  },
+  {
+    categoryName: "Mens",
+    name: "Adidas",
+    active: false,
+  },
+  {
+    categoryName: "Mens",
+    name: "Nike",
+    active: false,
+  },
+  {
+    categoryName: "Mens",
+    name: "Puma",
+    active: false,
+  },
+];
 const CategoryTab = () => {
+  const [isOpenCategory, setIsOpenCategory] = useState(categories);
   const styles = {
     container: {
-      width: "100%",
+      border: `0.5px solid ${colors.lightGray}`,
       borderRadius: "2px",
       textAlign: "left",
-      border: `0.5px solid ${colors.lightGray}`,
       padding: "15px 20px",
     },
     category: {
@@ -26,112 +99,58 @@ const CategoryTab = () => {
       color: colors.accentColor,
     },
     subCategoryContainer: {
-      fontSize: fontSize.normal,
+      padding: "0px 10px",
+    },
+    subCategoryText: {
+      fontSize: fontSize.smallPlus,
       color: colors.gray,
+      padding: "2px 0px",
     },
   };
-  const categories = [
-    {
-      name: "Sportswear",
-      active: false,
-    },
-    {
-      name: "MENS",
-      active: false,
-    },
-    {
-      name: "WOMENS",
-      active: false,
-    },
-    {
-      name: "KIDS",
-      active: false,
-    },
-    {
-      name: "FASHION",
-      active: false,
-    },
-    {
-      name: "HOUSEHOLDS",
-      active: false,
-    },
-    {
-      name: "INTERIORS",
-      active: false,
-    },
-    {
-      name: "CLOTHINGr",
-      active: false,
-    },
-    {
-      name: "BAGS",
-      active: false,
-    },
-    {
-      name: "SHOES",
-      active: false,
-    },
-  ];
-
-  const subCategory = [
-    {
-      categoryName: "Sportswear",
-      name: "Adidas",
-      active: false,
-    },
-    {
-      categoryName: "Sportswear",
-      name: "Nike",
-      active: false,
-    },
-    {
-      categoryName: "Sportswear",
-      name: "Puma",
-      active: false,
-    },
-    {
-      categoryName: "Sportswear",
-      name: "BezMarkice",
-      active: false,
-    },
-
-    {
-      categoryName: "Mens",
-      name: "Adidas",
-      active: false,
-    },
-    {
-      categoryName: "Mens",
-      name: "Nikee",
-      active: false,
-    },
-  ];
-
+  console.log(isOpenCategory);
   return (
     <SimplifiedDiv style={styles.container}>
-      {categories.map((cat) => {
+      {categories.map((cat, index) => {
         const filteredSubcategories = subCategory.filter(
           (sub) => sub.categoryName === cat.name
         );
-
         return (
           <>
             <SimplifiedDiv style={styles.categoryContainer}>
               <Text style={styles.category}>{cat.name}</Text>
-              <AddIcon style={styles.addIconStyle} />
+              {filteredSubcategories.length > 0 && (
+                <AddIcon
+                  style={styles.addIconStyle}
+                  onClick={() => {
+                    let changedState = isOpenCategory.map((category) => {
+                      if (category.name === cat.name) {
+                        let change = {
+                          ...category,
+                          active: !category.active,
+                        };
+                        return change;
+                      }
+
+                      return category;
+                    });
+
+                    setIsOpenCategory(changedState);
+                  }}
+                />
+              )}
             </SimplifiedDiv>
-            {filteredSubcategories.length > 0 && (
-              <SimplifiedDiv>
-                {filteredSubcategories.map((sub) => (
-                  <Text>{sub.name}</Text>
-                ))}
-              </SimplifiedDiv>
-            )}
+            {filteredSubcategories.length > 0 &&
+              isOpenCategory[index].active && (
+                <SimplifiedDiv style={styles.subCategoryContainer}>
+                  {filteredSubcategories.map((sub) => (
+                    <Text style={styles.subCategoryText}>{sub.name}</Text>
+                  ))}
+                </SimplifiedDiv>
+              )}
           </>
         );
       })}
     </SimplifiedDiv>
   );
 };
-
 export default CategoryTab;
