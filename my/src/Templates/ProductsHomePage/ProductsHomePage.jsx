@@ -5,7 +5,6 @@ import Text from "../../components/Text/Text";
 import CategoryTab from "../CategoryTab/CategoryTab";
 import { colors, fontSize, fontWeight } from "../../util/theme";
 import ArticlesHomePage from "../ArticlesHomePage/ArticlesHomePage";
-
 const styles = {
   container: {
     display: "flex",
@@ -26,7 +25,8 @@ const styles = {
 const ProductsHomePage = () => {
   return (
     <SimplifiedDiv style={styles.container}>
-      <Grid container direction="row">
+      <Grid container direction='row'>
+      <Grid container direction='row' spacing={5}>
         <Grid item md={3} lg={3}>
           <SimplifiedDiv style={styles.headingContainer}>
             <Text style={styles.headingText}>Category</Text>
