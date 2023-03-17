@@ -1,5 +1,6 @@
 import React from "react";
 import "./CustomDiv.css";
+
 const CustomDiv = ({
   children,
   width,
@@ -18,6 +19,7 @@ const CustomDiv = ({
   textAlign,
   letterSpacing,
   borderBottom,
+  gap,
 }) => {
   const divWidth = width ? width : "auto";
   const divHeight = height ? height : "auto";
@@ -35,6 +37,7 @@ const CustomDiv = ({
   const ta = textAlign ? textAlign : "left";
   const ls = letterSpacing ? letterSpacing : "0px";
   const bb = borderBottom ? borderBottom : "0px";
+  const gapp = gap ? gap : "0px";
 
   return (
     <div
@@ -55,10 +58,12 @@ const CustomDiv = ({
         textAlign: ta,
         letterSpacing: ls,
         borderBottom: bb,
+        gap: gapp,
       }}
     >
       {children}
     </div>
   );
 };
+
 export default CustomDiv;

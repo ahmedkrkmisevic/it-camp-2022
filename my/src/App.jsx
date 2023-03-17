@@ -4,8 +4,7 @@ import Navigation from "./Templates/Navigation/Navigation";
 import Slider from "./Templates/Slider/Slider";
 import SimplifiedDiv from "./components/SimplifiedDiv/SimplifiedDiv";
 import ProductsHomePage from "./Templates/ProductsHomePage/ProductsHomePage";
-import ArticleCard from "./Templates/ArticleCard/ArticleCard";
-import ArticlesHomePage from "./Templates/ArticlesHomePage/ArticleHomePage";
+import SuggestedCarousel from "./Templates/SuggestedCarousel/SuggestedCarousel";
 
 const App = () => {
   return (
@@ -13,9 +12,9 @@ const App = () => {
       <Navigation />
       <Slider />
       <ProductsHomePage />
-      <ArticleCard />
-      <ArticlesHomePage />
+      <SuggestedCarousel />
     </>
   );
 };
+
 export default App;
