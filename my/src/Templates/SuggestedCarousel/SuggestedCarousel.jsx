@@ -20,7 +20,7 @@ const SuggestedCarousel = () => {
         interval={1000}
         swipeable
         centerMode
-        centerSlidePercentage={32}
+        centerSlidePercentage={33}
       >
         {articles.map((article, index) => {
           return (
