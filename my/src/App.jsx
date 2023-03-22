@@ -21,13 +21,22 @@ import "./assets/fonts/Montserrat-Bold.ttf";
 import "./assets/fonts/Montserrat-BoldItalic.ttf";
 import "./assets/fonts/Montserrat-ExtraBold.ttf";
 import "./assets/fonts/Montserrat-ExtraLight.ttf";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div> Hello world!</div>,
+    },
+  ]);
   return (
     <>
-      <Navigation />
-      <Slider />
+      <RouterProvider router={router} />
+      {/* <Navigation /> */}
+      {/* <Slider />
       <ProductsHomePage />
+    </> */}
     </>
   );
 };
